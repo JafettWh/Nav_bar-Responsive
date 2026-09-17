@@ -1,17 +1,17 @@
-import styles from './MenuButton.module.css'
+import styles from './MenuButton.module.css';
 
 function MenuButton({ onClick, isOpen = false }) {
-  return (
-    <button
-      type="button"
-      className={styles.button}
-      onClick={onClick}
-      aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
-      aria-expanded={isOpen}
-    >
-      ☰
-    </button>
-  )
+    return (
+        <button
+        type="button"
+        className={styles.button}
+        onClick={onClick}
+        aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
+        aria-expanded={isOpen}
+        >
+        ☰
+        </button>
+    )
 }
 
 export default MenuButton
